@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFHIMNA</title>
+    <style>
+        body {
+            font-family: "KFGQPC Uthman Taha Naskh Regular", "Times New Roman", Arial, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #333;
+            padding: 20px 0;
+            font-size: 1.5em;
+        }
+
+        h3 {
+            font-family: "KFGQPC Uthman Taha Naskh Regular", "Times New Roman", Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        form input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        div {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #008000; 
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #006400; 
+        }
+
+        .answer-explanation {
+            text-align: left;
+            background-color: #ffd700; 
+            color: #000000; 
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .result-correct {
+            background-color: #008000; 
+        }
+
+        .result-incorrect {
+            background-color: #cc0000; 
+            animation: blink 1s infinite; 
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيْمِ</h1>
+
+    <div>
+        <p>السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</p>
+        <p>selamat datang di “AFHIMNA”</p>
+		<p>Jawab pertanyaan dibawah ini dengan benar!</p>
+    </div>
+
+<!-- Pertanyaan dan jawaban -->
+    <h3>Pertanyaan 1: "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيْمِ". lafadz " الرَّحِيْمِ" statusnya menjadi apa?</h3>
+    <form name="question1">
+        <input type="radio" name="answer1" value="A"> A. خَبَر<br>
+        <input type="radio" name="answer1" value="B"> B. مُبْتَدَأ<br>
+        <input type="radio" name="answer1" value="C"> C. نَعْت ثَانٍ<br>
+        <input type="radio" name="answer1" value="D"> D. مُضَاف إِلَيْه<br>
+    </form>
+    <div id="result1" style="display: none; text-align: center;"></div>
+
+    <h3>Pertanyaan 2: siapa yang meng'amili lafadz "الرَّحِيْم"?</h3>
+    <form name="question2">
+        <input type="radio" name="answer2" value="A"> A. اسْم<br>
+        <input type="radio" name="answer2" value="B"> B. بَاء<br>
+        <input type="radio" name="answer2" value="C"> C. الرَّحْمن<br>
+        <input type="radio" name="answer2" value="D"> D. مُضَاف إِلَيْه<br>
+    </form>
+    <div id="result2" style="display: none; text-align: center;"></div>
+<h3>Pertanyaan 3: lafadz jalalah adalah lafadz yang? </h3>
+    <form name="question3">
+        <input type="radio" name="answer3" value="A"> A. نَكِرَة<br>
+        <input type="radio" name="answer3" value="B"> B. أَعْرَفُ الْمَعَارِف<br>
+        <input type="radio" name="answer3" value="C"> C. مُبْهَام<br>
+        <input type="radio" name="answer3" value="D"> D. مُحْتَمِل<br>
+    </form>
+    <div id="result3" style="display: none; text-align: center;"></div>
+
+    <h3>Pertanyaan 4: بَاء pada "بِسْم" termasuk kalimat?</h3>
+    <form name="question4">
+        <input type="radio" name="answer4" value="A"> A. اسْم<br>
+        <input type="radio" name="answer4" value="B"> B. حَرْف<br>
+        <input type="radio" name="answer4" value="C"> C. فِعْل<br>
+        <input type="radio" name="answer4" value="D"> D. خَالِفَة<br>
+    </form>
+    <div id="result4" style="display: none;"></div>
+<h3>Pertanyaan 5: dibawah ini yang termasuk huruf jer adalah?</h3>
+    <form name="question5">
+        <input type="radio" name="answer5" value="A"> A. يَا<br>
+        <input type="radio" name="answer5" value="B"> B. لَنْ<br>
+        <input type="radio" name="answer5" value="C"> C. إِنَّ<br>
+        <input type="radio" name="answer5" value="D"> D. كَيْ<br>
+    </form>
+    <div id="result5" style="display: none;"></div>
+
+    <h3>Pertanyaan 6: أَبْدَأُ بِاسْمِ اللهِ وَالرَّحْمنِ pada susunan tersebut, huruf باء ta'alluq kepada?</h3>
+    <form name="question6">
+        <input type="radio" name="answer6" value="A"> A. أَبْدَأُ<br>
+        <input type="radio" name="answer6" value="B"> B. مُتَعَلَّق مُقَدَّر<br>
+        <input type="radio" name="answer6" value="C"> C. الرَّحْمن<br>
+        <input type="radio" name="answer6" value="D"> D. اسْمِ<br>
+    </form>
+    <div id="result6" style="display: none;"></div>
+<h3>Pertanyaan 7: apa waqe' dari lafadz أَبْدَأُ?</h3>
+    <form name="question7">
+        <input type="radio" name="answer7" value="A"> A. مُفْرَد مُذَكَّر غَائِب<br>
+        <input type="radio" name="answer7" value="B"> B. مُتَكَلِّم مَعَ الْغَيْر<br>
+        <input type="radio" name="answer7" value="C"> C. مُتَكَلِّم وَحْدَه<br>
+        <input type="radio" name="answer7" value="D"> D. جَمْع مُذَكَّر سَالِم<br>
+    </form>
+    <div id="result7" style="display: none;"></div>
+
+    <h3>Pertanyaan 8: وَبِالرَّحِيْمِ دَائِمِ الْإِحْسَان, shigot dari lafadz دَائِم adalah? </h3>
+    <form name="question8">
+        <input type="radio" name="answer8" value="A"> A. اسْم مَفْعُوْل<br>
+        <input type="radio" name="answer8" value="B"> B. اسْم فَاعِل<br>
+        <input type="radio" name="answer8" value="C"> C. أَفْعَل تَفْضِيْل<br>
+        <input type="radio" name="answer8" value="D"> D. فِعْل أَمْر<br>
+    </form>
+    <div id="result8" style="display: none;"></div>
+<h3>Pertanyaan 9: dibawah ini yang termasuk حُرُوْف الْعَطْف adalah?</h3>
+    <form name="question9">
+        <input type="radio" name="answer9" value="A"> A. أَيْنَ<br>
+        <input type="radio" name="answer9" value="B"> B. إِذْمَا<br>
+        <input type="radio" name="answer9" value="C"> C. لَيْتَ<br>
+        <input type="radio" name="answer9" value="D"> D. أَمْ<br>
+    </form>
+    <div id="result9" style="display: none;"></div>
+
+    <h3>Pertanyaan 10: fa'edah umum dari huruf athof فَاء adalah?</h3>
+    <form name="question10">
+        <input type="radio" name="answer10" value="A"> A. تَخْيِيْر<br>
+        <input type="radio" name="answer10" value="B"> B. تَعْقِيْب<br>
+        <input type="radio" name="answer10" value="C"> C. إِضْرَاب<br>
+        <input type="radio" name="answer10" value="D"> D. مُطْلَقُ الْجَمْع<br>
+    </form>
+    <div id="result10" style="display: none;"></div>
+    <script>
+        function updateResults(questionNumber, correctAnswer, additionalInfo) {
+            var selectedAnswer = document.forms["question" + questionNumber].elements["answer" + questionNumber];
+            var resultDiv = document.getElementById("result" + questionNumber);
+
+            resultDiv.innerHTML = selectedAnswer.value === correctAnswer
+                ? "<p class='result-correct'><strong>Jawaban:</strong> Benar!</p>" + "<div class='answer-explanation'>" + additionalInfo + "</div>"
+                : "<p class='result-incorrect'><strong>Jawaban:</strong> Salah.</p>";
+
+            resultDiv.style.display = "block";
+        }
+
+document.forms["question1"].addEventListener("change", function () {
+            updateResults(1, "C", "<p>karena lafadz الرَّحِيْمِ adalah sifat kedua dari lafadz jalalah. </p>");
+        });
+
+        document.forms["question2"].addEventListener("change", function () {
+            updateResults(2, "A", "<p>karena 'amil نَعْت juga merupakan 'amil مَنْعُوْت</p>");
+        });
+
+        document.forms["question3"].addEventListener("change", function () {
+            updateResults(3, "B", "<p>lafadz jalalah adalah isim yang paling paling paling ma'rifat</p>");
+        });
+
+        document.forms["question4"].addEventListener("change", function () {
+            updateResults(4, "B", " karena kalimat tersebut bisa menunjukkan makna jika digabungkan dengan kalimat lain</p>");
+        });
+
+        document.forms["question5"].addEventListener("change", function () {
+            updateResults(5, "D", "<p>قَالَ فِيْ الْأَلْفِيَّة: مُذْ مُنْذُ رُبَّ الْلَامُ كَيْ وَاوٌ وَتَا * وَالْكَافُ وَاْلبَا وَلَعَلَّ وَمَتَى</p>");
+        });
+document.forms["question6"].addEventListener("change", function () {
+            updateResults(6, "A", "<p>ta'alluq dari huruf jer harus berupa فعل atau شبه فعل.</p>");
+        });
+
+        document.forms["question7"].addEventListener("change", function () {
+            updateResults(7, "C", "<p>يَبْدَأُ يَبْدَآنِ يَبْدَؤُوْنَ تَبْدَأُ تَبْدَآنِ يَبْدَأْنَ تَبْدَأُ تَبْدَآنِ تَبْدَؤُوْنَ تَبْدَئِيْنَ تَبْدَآنِ تَبْدَأْنَ أَبْدَأُ نَبْدَأُ</p>");
+        });
+
+        document.forms["question8"].addEventListener("change", function () {
+            updateResults(8, "B", "<p>دَامَ يَدُوْمُ دَوَامًا وَمَدَامًا فَهُوَ دَائِمٌ وَذَاكَ مَدُوْمٌ دُمْ لَا تَدُمْ مَدَامٌ مِدْوَمٌ</p>");
+        });
+
+        document.forms["question9"].addEventListener("change", function () {
+            updateResults(9, "D", "<p>قال العمريطي رحمه الله تعالى: بالواو والفا أو وأم وثما * حتى وبل ولا ولكن إما.</p>");
+        });
+
+        document.forms["question10"].addEventListener("change", function () {
+            updateResults(10, "B", "<p>تَعْقِيْب adalah redaksi lain dari التَّرْتِيْب بِاتِّصَال.</p>");
+        });
+    </script>
+
+<div>
+    <p>Kuis ini hanyalah kuis sederhana, setidaknya bisa membantu anda untuk kembali ke dimensi renung pribadi dan bisa kembali mengais memori Nahwu yang pernah hinggap di sanubari.</p>
+    <p>Temukan lebih banyak kuis yang bermanfaat untuk meningkatkan wawasan Nahwu Anda, info lebih lanjut hubungi.</p>
+    <a href="https://www.instagram.com/umarhamdan_a/"><img src="https://i.ibb.co/GJQLx7r/instagram-logo.png" alt="Instagram" style="width: 50px; height: 50px; opacity: 0.8;"></a>
+    <a href="https://wa.me/62859106771139"><img src="https://i.ibb.co/fH3g5XW/whatsapp-logo.png" alt="WhatsApp" style="width: 50px; height: 50px; opacity: 0.8;"></a>
+    <a href="https://t.me/AFHIMNA"><img src="https://i.ibb.co/2tMtmy1/telegram-logo.png" alt="Telegram" style="width: 50px; height: 50px;"></a>
+    <p>this website is created by foztoro© .</p>
+</div>
+</body>
+
+</html>
